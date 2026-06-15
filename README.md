@@ -1,4 +1,4 @@
-# Notschool OS — Multi-Agent AI Learning Architect
+# Notschool - Multi-Agent AI Learning Architect
 
 Built for the **Google Gen AI Academy APAC 2026 Hackathon** — Track 1: Agentic AI
 
