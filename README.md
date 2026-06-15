@@ -1,12 +1,12 @@
 # Notschool - Multi-Agent AI Learning Architect
 
-Built for the **Google Gen AI Academy APAC 2026 Hackathon** — Track 1: Agentic AI
+Built for the **Google Gen AI Academy APAC 2026 Hackathon** - Track 1: Agentic AI
 
 ---
 
 ## Overview
 
-Most AI educational tools are stateless question-answering interfaces. Notschool OS is a fully automated, multi-agent pipeline that takes a single user goal and produces a complete, personalised, scheduled, resource-backed learning plan — without further input.
+Most AI educational tools are stateless question answering interfaces. Notschool OS is a fully automated, multi-agent pipeline that takes a single user goal and produces a complete, personalised, scheduled, resource-backed learning plan — without further input.
 
 The system accepts a text goal or an image of a syllabus, textbook index, or job description. It reasons over that input, constructs a structured 7-day curriculum tailored to the learner's profile (age, existing skills, interests, preferred learning style), sources relevant video tutorials, surfaces real 2026 industry initiatives, persists the plan to a database, and books every study session directly into the user's Google Calendar — all in a single request.
 
