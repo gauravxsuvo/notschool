@@ -256,7 +256,7 @@ Obtain credentials for the following:
    GOOGLE_CLIENT_SECRET=your_oauth_client_secret
 
    # Optional but strongly recommended in any shared deployment — used to sign
-   # guest tokens. Falls back to a baked-in dev secret if unset, which means
+   # guest tokens. Falls back to a baked in dev secret if unset, which means
    # guest tokens issued by one server instance would also validate on another
    # instance using the default; set this to a random ≥32-char string in prod.
    GUEST_TOKEN_SECRET=replace_with_a_long_random_string
