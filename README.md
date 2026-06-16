@@ -10,7 +10,7 @@ Most AI educational tools are stateless question answering interfaces. Notschool
 
 The system accepts a text goal or an image of a syllabus, textbook index, or job description. It reasons over that input, constructs a structured 7-day curriculum tailored to the learner's profile (age, existing skills, interests, preferred learning style), sources relevant video tutorials, surfaces real 2026 industry initiatives, persists the plan to a database, and books every study session directly into the user's Google Calendar — all in a single request.
 
-Beyond generation, Notschool OS provides a full learning dashboard: progress tracking, streaks, per-module quizzes, an auto-rescheduler for missed sessions, and a context-aware multi-turn AI tutor that remembers prior conversations.
+Beyond generation, Notschool provides a full learning dashboard: progress tracking, streaks, per-module quizzes, an auto-rescheduler for missed sessions, and a context-aware multi-turn AI tutor that remembers prior conversations.
 
 ---
 
