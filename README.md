@@ -150,7 +150,7 @@ The same `_require_user` dependency handles both shapes — Google tokens are va
 | `POST` | `/api/quiz/generate` | Generates or returns the cached quiz for a module. `force=true` regenerates. |
 | `POST` | `/api/quiz/submit` | Records the score for a quiz attempt. |
 
-### AI tutor (multi-turn chats)
+### AI tutor (multi turn chats)
 | Method | Path | Description |
 |---|---|---|
 | `POST` | `/api/doubt/ask` | Asks the tutor a question. Creates a new chat thread if `chat_id` is omitted. |
@@ -173,7 +173,7 @@ The same `_require_user` dependency handles both shapes — Google tokens are va
 
 | Table | Purpose |
 |---|---|
-| `users` | OAuth-linked user record plus profile fields (display name, age, skills, interests, learning style). |
+| `users` | OAuth linked user record plus profile fields (display name, age, skills, interests, learning style). |
 | `curricula` | One row per generation. Stores the full curriculum JSON, YouTube URLs, opportunities, and web trends. |
 | `study_sessions` | One row per module. Tracks `scheduled_time`, `status`, `event_id`, `event_link`, `youtube_url`, and `completed_at`. |
 | `quizzes` | Generated quizzes, scored on submission. |
