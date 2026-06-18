@@ -99,7 +99,6 @@ def architect_node(state: NotschoolState) -> dict:
     if len(cleaned) < 3:
         cleaned = (cleaned + _fallback_initiatives(goal))[:8]
     curriculum["initiatives"] = cleaned
-    # Keep legacy key in sync so older clients still render something.
     curriculum["opportunities"] = cleaned
 
     return {
