@@ -94,7 +94,6 @@ def architect_node(state: NotschoolState) -> dict:
         }
 
     # Normalize initiatives: support both old `opportunities` and new `initiatives` keys,
-    # filter placeholder URLs, ensure a minimum set of provider-anchored 2026 cohorts.
     raw_inits = curriculum.get("initiatives") or curriculum.get("opportunities") or []
     cleaned = _clean_initiatives(raw_inits)
     if len(cleaned) < 3:
