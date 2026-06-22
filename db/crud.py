@@ -15,7 +15,6 @@ def _conn():
     return conn
 
 
-# ---------------- USERS ----------------
 
 def upsert_user(user_id: str, email: str, name: str = None, picture: str = None):
     """Create user if missing, update last_login otherwise."""
@@ -117,7 +116,6 @@ def update_user_profile(user_id: str, *, display_name: str | None = None,
     return get_user(user_id)
 
 
-# ---------------- CURRICULA ----------------
 
 def add_curriculum(user_id: str, goal: str, mode: str, title: str,
                    curriculum_json: dict, youtube_urls: list,
@@ -190,7 +188,6 @@ def delete_curriculum(curriculum_id: int, user_id: str) -> bool:
     return deleted
 
 
-# ---------------- STUDY SESSIONS ----------------
 
 def add_session(user_id: str, curriculum_id: int, goal: str, module_name: str,
                 module_description: str, module_day: int, duration_hours: float,
@@ -348,7 +345,6 @@ def get_learning_streak(user_id: str) -> dict:
             current += 1
             expected = expected - _td(days=1)
         elif d == expected + _td(days=1):
-            # not started today yet — yesterday counts as start of streak
             current = 1
             expected = d - _td(days=1)
         else:
@@ -429,7 +425,6 @@ def reset_user_data(user_id: str):
     conn.close()
 
 
-# ---------------- QUIZZES ----------------
 
 def add_quiz(user_id: str, curriculum_id: int, module_day: int, module_topic: str, questions: list) -> int:
     conn = _conn()
@@ -519,7 +514,6 @@ def get_quiz_progress(user_id: str, curriculum_id: int = None) -> dict:
     }
 
 
-# ---------------- DOUBTS ----------------
 
 def add_doubt(user_id: str, question: str, answer: str,
               curriculum_id: int = None, module_day: int = None,
@@ -554,7 +548,6 @@ def get_user_doubts(user_id: str, curriculum_id: int = None, limit: int = 50):
     return rows
 
 
-# ---------------- CHATS (multi-turn AI tutor threads) ----------------
 
 def create_chat(user_id: str, curriculum_id: int = None,
                 module_day: int = None, title: str = "New chat") -> int:
