@@ -19,9 +19,9 @@ class NotschoolState(TypedDict):
     industry_opportunities: List[dict]
     calendar_event_id: Optional[str]    
     calendar_event_ids: Optional[List[str]]
-    calendar_event_links: Optional[List[str]]   # per-session html links
+    calendar_event_links: Optional[List[str]]   
     db_record_id: Optional[int]
-    curriculum_id: Optional[int]         # newly created curriculum row
+    curriculum_id: Optional[int]        
 
     # Orchestration & Audit Logging
     messages: Annotated[List[dict[str, str]], operator.add]
