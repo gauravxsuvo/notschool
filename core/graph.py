@@ -20,8 +20,6 @@ def build_notschool_graph():
     workflow.add_node("scheduler", scheduler_node)
     workflow.add_node("db_saver", db_node)
 
-    # 2. Define the Edges (The "Workflow")
-    # For langgraph v0.0.26, we define the start using set_entry_point()
     workflow.set_entry_point("architect")
     
     workflow.add_edge("architect", "librarian")
@@ -29,8 +27,6 @@ def build_notschool_graph():
     workflow.add_edge("scheduler", "db_saver")
     workflow.add_edge("db_saver", END)
 
-    # Compile into an executable application
     return workflow.compile()
 
-# Expose the compiled instance so the FastAPI server can invoke it
 notschool_app = build_notschool_graph()
