@@ -11,10 +11,8 @@ def build_notschool_graph():
     """
     Compiles the LangGraph state machine.
     """
-    # Initialize the graph with our strict schema
     workflow = StateGraph(NotschoolState)
 
-    # 1. Register the Nodes (The "Workers")
     workflow.add_node("architect", architect_node)
     workflow.add_node("librarian", librarian_node)
     workflow.add_node("scheduler", scheduler_node)
