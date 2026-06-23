@@ -14,10 +14,10 @@ class NotschoolState(TypedDict):
 
     # Agent Outputs
     curriculum_json: Optional[dict[str, Any]]
-    youtube_urls: List[str]              # flat list, parallel to curriculum.modules (one per module)
+    youtube_urls: List[str]              
     web_trends: List[str]
     industry_opportunities: List[dict]
-    calendar_event_id: Optional[str]     # first event link (for backward compat / hero card)
+    calendar_event_id: Optional[str]    
     calendar_event_ids: Optional[List[str]]
     calendar_event_links: Optional[List[str]]   # per-session html links
     db_record_id: Optional[int]
